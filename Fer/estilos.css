@@ -1,0 +1,68 @@
+ body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #1a1a2e, #16213e);
+  color: #eaeaea;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  padding: 40px;
+  overflow: hidden;
+}
+.contenedor {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 20px;
+  max-width: 420px;
+  margin: auto;
+  box-shadow: 0 0 25px rgba(252, 227, 138, 0.3);
+  backdrop-filter: blur(5px);
+}
+.portada {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px rgba(255, 182, 185, 0.4);
+}
+audio {
+  width: 100%;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 5px #fce38a);
+}
+.promo {
+  font-size: 15px;
+  color: #fce38a;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.estrellas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background: #fce38a;
+  border-radius: 50%;
+  box-shadow:
+    50px 100px #fce38a,
+    150px 200px #fce38a,
+    300px 400px #fce38a,
+    500px 250px #fce38a,
+    700px 150px #fce38a,
+    900px 350px #fce38a,
+    1200px 100px #fce38a,
+    1300px 500px #fce38a,
+    1400px 250px #fce38a,
+    1600px 400px #fce38a;
+  animation: brillar 2s infinite alternate;
+  z-index: -1;
+}
+@keyframes brillar {
+  from {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
